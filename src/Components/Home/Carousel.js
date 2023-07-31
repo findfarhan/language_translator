@@ -1,0 +1,194 @@
+import React from 'react';
+import frontImg from '../../assets/images/front-img1.png';
+import verctorOne from '../../assets/images/home-front.png';
+import { useTranslation } from 'react-i18next';
+
+const Carousel = () => {
+  const { t } = useTranslation();
+
+  return (
+    <>
+      <div
+        id="carouselExample"
+        className="carousel slide"
+        // data-bs-ride="carousel"
+      >
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <div
+              className="container-fluid px-0"
+              style={{
+                backgroundColor: '#385F59',
+              }}
+            >
+              <div className="row slider-main_container">
+                <div className="position-relative slider-h-p-b_container pt-lg-0 pt-4">
+                  <div className="h">
+                    <h1>
+                      {t('Healthy')} <br /> {t('Tableware')}
+                    </h1>
+                    <p>
+                      {t('nature')} <br /> {t('future')}
+                    </p>
+                    <button
+                      style={{
+                        padding: '13px 80px',
+                        backgroundColor: '#D75D39',
+                        border: 'none',
+                        borderRadius: '20120px',
+                        color: 'white',
+                      }}
+                    >
+                      {t('SHOP NOW')}
+                    </button>
+                  </div>
+                </div>
+                <div className="slider-img-container">
+                  <img
+                    className="d-block img-fluid"
+                    src={frontImg}
+                    alt="First slide"
+                    style={{ position: 'absolute', right: '-49px', top: '0' }}
+                  />
+                </div>
+              </div>
+              <div className="slider-img-container1 pt-5"></div>
+            </div>
+          </div>
+          <div className="carousel-item ">
+            <div
+              className="container-fluid px-0"
+              style={{
+                backgroundColor: '#385F59',
+              }}
+            >
+              <div className="row slider-main_container">
+                <div className="position-relative slider-h-p-b_container pt-lg-0 pt-4">
+                  <div className="h">
+                    <h1>
+                      {t('Healthy')} <br /> {t('Tableware')}
+                    </h1>
+                    <p>
+                      {t('nature')} <br /> {t('future')}
+                    </p>
+                    <button
+                      style={{
+                        padding: '13px 80px',
+                        backgroundColor: '#D75D39',
+                        border: 'none',
+                        borderRadius: '20120px',
+                        color: 'white',
+                      }}
+                    >
+                      {t('SHOP NOW')}
+                    </button>
+                  </div>
+                </div>
+                <div className="slider-img-container">
+                  <img
+                    className="d-block img-fluid"
+                    src={frontImg}
+                    alt="First slide"
+                    style={{ position: 'absolute', right: '-49px', top: '0' }}
+                  />
+                </div>
+              </div>
+              <div className="slider-img-container1 pt-5"></div>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <div
+              className="container-fluid px-0"
+              style={{
+                backgroundColor: '#385F59',
+              }}
+            >
+              <div className="row slider-main_container">
+                <div className="position-relative slider-h-p-b_container pt-lg-0 pt-4">
+                  <div className="h">
+                    <h1>
+                      {t('Healthy')} <br /> {t('Tableware')}
+                    </h1>
+                    <p>
+                      {t('nature')} <br /> {t('future')}
+                    </p>
+                    <button
+                      style={{
+                        padding: '13px 80px',
+                        backgroundColor: '#D75D39',
+                        border: 'none',
+                        borderRadius: '20120px',
+                        color: 'white',
+                      }}
+                    >
+                      {t('SHOP NOW')}
+                    </button>
+                  </div>
+                </div>
+                <div className="slider-img-container">
+                  <img
+                    className="d-block img-fluid"
+                    src={frontImg}
+                    alt="First slide"
+                    style={{ position: 'absolute', right: '-49px', top: '0' }}
+                  />
+                </div>
+              </div>
+              <div className="slider-img-container1 pt-5"></div>
+            </div>
+          </div>
+        </div>
+        <button
+          className="carousel-control-prev d-none d-lg-block"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span
+            className="carousel-control-prev-icon visually-hidden"
+            aria-hidden="true"
+          />
+          <span className="">
+            <span
+              className="material-symbols-outlined p"
+              style={{
+                color: '#257fa2',
+                fontSize: '30px',
+                fontWeight: 'bolder',
+                // marginRight: '60px',
+              }}
+            >
+              arrow_back_ios
+            </span>
+          </span>
+        </button>
+        <button
+          className="carousel-control-next d-none d-lg-block"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span
+            className="carousel-control-next-icon visually-hidden"
+            aria-hidden="true"
+          />
+          <span className="">
+            <span
+              className="material-symbols-outlined n"
+              style={{
+                color: '#257fa2',
+                fontSize: '30px',
+                fontWeight: 'bolder',
+                marginLeft: '60px',
+              }}
+            >
+              arrow_forward_ios
+            </span>
+          </span>
+        </button>
+      </div>
+    </>
+  );
+};
+
+export default Carousel;

@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fcf7ef;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app-main {
+  min-height: calc(100vh - 141px);
+}
+
+.review-rating {
+  color: #d75d39;
+}
+.order-rating {
+  color: #d75d39;
+}
+.client-rating {
+  color: #d75d39;
+  font-size: 1.3em;
+}
+.category-rating {
+  color: #f7ce45;
+}
+
+.check-font {
+  font-size: 3.5em;
+}
+
+.dropdown-content li:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}

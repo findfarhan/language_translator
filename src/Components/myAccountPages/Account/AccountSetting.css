@@ -1,0 +1,9 @@
+.label-font {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+  font-family: 'Nunito', sans-serif;
+
+  color: #385f59;
+}
